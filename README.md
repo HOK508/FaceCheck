@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">  
-    <a href="https://github.com/yourusername/FaceCheck">
+    <a href="https://github.com/HOK508/FaceCheck">
         <img alt="GitHub" src="https://img.shields.io/github/stars/yourusername/FaceCheck?style=social">
     </a>
-    <a href="https://github.com/yourusername/FaceCheck/blob/main/LICENSE">
+    <a href="https://github.com/HOK508/FaceCheck/blob/main/LICENSE">
         <img alt="License" src="https://img.shields.io/github/license/yourusername/FaceCheck">
     </a>
 </p>
@@ -49,3 +49,17 @@ FaceCheck 是一个用于区分 **真实人脸** 与 **AI生成人脸** 的深�
 ```bash
 git clone https://github.com/yourusername/FaceCheck.git
 cd FaceCheck
+
+### 2. 创建环境
+```bash
+conda create -n facecheck python=3.8
+conda activate facecheck
+pip install -r requirements.txt
+
+### 3. 模型训练
+```bash
+python train.py --config configs/resnet_attention.yaml
+
+### 4. 模型评估
+```bash
+python evaluate.py --model checkpoints/resnet_attention.pth --test_dir data/test
