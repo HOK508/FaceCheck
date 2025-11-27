@@ -23,6 +23,23 @@ FaceCheck 是一个用于区分 **真实人脸** 与 **AI生成人脸** 的深�
 
 ---
 
+## 模型结构
+```text
+FaceCheck/
+├─ data/                  # Dataset (real and AI-generated faces)
+├─ configs/               # Model configuration files
+├─ checkpoints/           # Model checkpoints
+├─ src/                   # Training and evaluation scripts
+│   ├─ train.py
+│   ├─ evaluate.py
+│   ├─ predict.py
+├─ web_app.py             # Web frontend entry point
+├─ requirements.txt       # Python dependencies
+├─ README.md
+└─ pics/                  # Logo and demo images
+```
+
+
 ## 核心功能
 
 - **数据处理**：混合数据集加载、图像归一化、数据增强（翻转、裁剪等）  
