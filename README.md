@@ -28,12 +28,11 @@ FaceCheck 是一个用于区分 **真实人脸** 与 **AI生成人脸** 的深�
 FaceCheck/
 ├─ dataset/               # Dataset (real and AI-generated faces)
 │   ├─ fake/
-│       ├─ train/
-│       ├─ test/
+│   │   ├─ train/
+│   │   ├─ test/
 │   ├─ real/
-│       ├─ train/
-│       ├─ test/
-│                 
+│   │   ├─ train/
+│   │   ├─ test/              
 ├─ configs/               # Model configuration files
 ├─ checkpoints/           # Model checkpoints
 ├─ src/                   # Training and evaluation scripts
