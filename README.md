@@ -19,7 +19,7 @@
 **AI生成图像鉴别系统（真实 vs AI生成人脸二分类）**
 
 FaceCheck 是一个用于区分 **真实人脸** 与 **AI生成人脸** 的深度学习二分类识别系统。  
-它实现了从 **数据预处理、模型训练、注意力机制增强、对比学习、性能评估、可视化** 到 **Web部署** 的完整深度学习工作流，适用于学术研究、课程作业及工程应用。
+它实现了从 **数据预处理、模型训练、注意力机制增强、对比学习、性能评估、可视化** 到 **Web部署** 的完整深度学习工作流，适用于课程作业。
 
 ---
 
@@ -66,6 +66,20 @@ FaceCheck/
 - **前沿技术**：融合注意力机制与对比学习，提高 AI生成图像检测的鲁棒性  
 
 ---
+
+## 数据集准备 (Dataset Prepare)
+### 1. 真实人脸数据集
+```bash
+git clone https://github.com/suvojit-0x55aa/celebA-HQ-dataset-download.git
+```
+### 2. AI生成人脸数据集
+```bash
+python generate.py \
+    --network=/home/a508/AI/fake/ffhq.pkl \
+    --seeds=0-4999 \
+    --trunc=1 \
+    --outdir=/home/a508/AI/fake/out
+```
 
 ## 快速开始 (Quick Start)
 
