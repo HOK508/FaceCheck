@@ -4,10 +4,10 @@
 
 <p align="center">  
     <a href="https://github.com/HOK508/FaceCheck">
-        <img alt="GitHub" src="https://img.shields.io/github/stars/yourusername/FaceCheck?style=social">
+        <img alt="GitHub" src="https://github.com/HOK508/FaceCheck/blob/main/FaceCheck.jpg">
     </a>
     <a href="https://github.com/HOK508/FaceCheck/blob/main/LICENSE">
-        <img alt="License" src="https://img.shields.io/github/license/yourusername/FaceCheck">
+        <img alt="License" src="https://img.shields.io/github/license/HOK508/FaceCheck">
     </a>
 </p>
 
